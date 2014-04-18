@@ -1,19 +1,9 @@
 'use strict';
 
 angular
-  .module('angularUaparserApp', [
+  .module('angularuaparser', [
     'ngCookies',
     'ngResource',
     'ngSanitize',
     'ngRoute'
-  ])
-  .config(function ($routeProvider) {
-    $routeProvider
-      .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
-      })
-      .otherwise({
-        redirectTo: '/'
-      });
-  });
+  ]);
